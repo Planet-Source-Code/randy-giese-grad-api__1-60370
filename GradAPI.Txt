@@ -1,0 +1,20 @@
+
+Purpose:
+Gradient_API uses the 'GradientFillTriangle' API to create two opposed Gradient filled triangles.  The effect is that you get a screen sized display that is a Gradient in all directions.  By using the API, I can achieve very fast graphics.  I set it up to use a Timer (tmrGrad_API) to continually refresh the display every second.  I included a popup Speed control, accessible by right-clicking the form, so that the user may control the display speed.  I set the minimum time to 10 milliseconds, which is too fast for me (it causes an annoying flashing).  On the other hand, the maximum of 10 seconds is very slow (too slow for me).  The colors of the 4 corners, and the direction that the triangles face, are chosen at random, so the display will be constantly changing.
+
+Inputs:
+None.
+
+Returns:
+Nice looking Gradient graphics.
+
+Side Effects:
+None.
+
+Assumptions:
+None.
+
+API's etc:
+GetInputState		'  This one is just to speed up the DoEvents
+GradientFillTriangle	'  This draws the triangles
+SetCursorPos		'  This just moves the cursor off the screen
